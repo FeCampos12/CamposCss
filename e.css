@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+    background-image:url(imagem/jingle-bell.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;/*podemos usar pix para vertical e horizontal 200px 40px*/
+}
+/*Podemos colocar + de uma imagem no background separando as funcionalidades por virgula background-repeat: no-repeat,repeat;*/
+/*No jogo de não te erritas podemos usar na parte da fixa para receber duas peças*/

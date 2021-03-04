@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+
+}
+#conteudo{
+    color:aliceblue;/*cor de texto*/
+    font-size: 20pt; /*tamanho do texto*/
+    font-weight: lighter;/*quantidade do negrito*/
+}
