@@ -4,6 +4,23 @@ body{
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;/*podemos usar pix para vertical e horizontal 200px 40px*/
+    background-clip: border-box;/*a cor de fundo avança ate a borda*/
+    background-clip: padding-box;/*A cor de fundo não avança ate na borda*/
+    background-clip: content-box;/*aplica o back ground apenas no conteudo dentro da divisão*/
+    background-attachment: fixed;/*fax com que a imagem de fundo fica fixa*/
+    /*background:#fff url(img.jpg) no-repeat 0px 2px/150px;*/
+    background: rgba(22, 45, 100, alpha);
+    
+    /*BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS*/
+    border:2px dotted rgb(117, 40, 40);
+    border-radius: 15px;
+    border-image: url() 30 round;/*30 indica apresentar apenas 30px da imagen(uma parte), round indica repetir apenas 
+    a parte da imagem que faz parte da borda , podemos tambem usar strect que vai esticar não repetir a parte da borda
+    */
+    /*MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN*/
+    
+
+
 }
 /*Podemos colocar + de uma imagem no background separando as funcionalidades por virgula background-repeat: no-repeat,repeat;*/
 /*No jogo de não te erritas podemos usar na parte da fixa para receber duas peças*/
