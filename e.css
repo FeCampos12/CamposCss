@@ -18,8 +18,11 @@ body{
     a parte da imagem que faz parte da borda , podemos tambem usar strect que vai esticar não repetir a parte da borda
     */
     /*MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN*/
-    
+    margin:auto;/*centraliza o elemento*/
+    text-align: center;/*centar texto
 
+    /*PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING*/
+    
 
 }
 /*Podemos colocar + de uma imagem no background separando as funcionalidades por virgula background-repeat: no-repeat,repeat;*/
