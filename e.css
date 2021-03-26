@@ -10,6 +10,11 @@ body{
     background-attachment: fixed;/*fax com que a imagem de fundo fica fixa*/
     /*background:#fff url(img.jpg) no-repeat 0px 2px/150px;*/
     background: rgba(22, 45, 100, alpha);
+    /*Podemos colocar + de uma imagem no background separando as funcionalidades por virgula background-repeat: no-repeat,repeat;*/
+    /*No jogo de não te erritas podemos usar na parte da fixa para receber duas peças*/
+
+
+
     
     /*BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS BORDAS*/
     border:2px dotted rgb(117, 40, 40);
@@ -17,13 +22,45 @@ body{
     border-image: url() 30 round;/*30 indica apresentar apenas 30px da imagen(uma parte), round indica repetir apenas 
     a parte da imagem que faz parte da borda , podemos tambem usar strect que vai esticar não repetir a parte da borda
     */
+
+
+
     /*MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN MARGEN*/
     margin:auto;/*centraliza o elemento*/
     text-align: center;/*centar texto
 
-    /*PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING*/
-    
 
+
+    /*PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING PADING*/
+    padding:100px;
+
+
+
+    /*PREENCHIMENTO GRADIENTE PREENCHIMENTO GRADIENTE PREENCHIMENTO GRADIENTE PREENCHIMENTO GRADIENTE PREENCHIMENTO GRADIENTE*/
+    background: linear-gradient(to right, black, red);/*gradiente para direita, to botton to left to top*/
+    background: linear-gradient(45deg, black, red);/*45 graos,sem esquecer que podemos por mais de 2 cores*/
+    background: linear-gradient(to right, black 0%, red 25%);/*endicando posições da cores*/
+    background: radial-gradient(black, red);/*tipo circular*/
+    background: radial-gradient(circle,black, red);/*força a variação a ser um circulo perfeito*/
+    background: repeating-radial-gradient(black, red);/*repetir o gradiente*/
+    -webkit-text-fill-color:transparent;/*transforma o texto transparente*/
+    -webkit-background-clip: text;/*coloca apenas o fundo no local do texto*/
+
+
+
+    /*SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA SOMBRA*/
+    text-shadow: 10px 10px 0px black ;/*sombra para texto, 1horizontal 2 vertical 3tonalidade 4 cor*/
+    /*podemos colocar + de uma sombra separando os dados por virgula*/
+    box-shadow: 10px 10px 0px black ;/*sombra para elementos do tipo box "div"*/
 }
-/*Podemos colocar + de uma imagem no background separando as funcionalidades por virgula background-repeat: no-repeat,repeat;*/
-/*No jogo de não te erritas podemos usar na parte da fixa para receber duas peças*/
+
+
+    /*FORMATAÇÃO DE TEXTO FORMATAÇÃO DE TEXTO FORMATAÇÃO DE TEXTO FORMATAÇÃO DE TEXTO FORMATAÇÃO DE TEXTO FORMATAÇÃO DE TEXTO*/
+
+p{
+    color:blueviolet;/*colocar cor no texto*/
+}
+
+
+
+
