@@ -59,6 +59,9 @@ body{
 
 p{
     color:blueviolet;/*colocar cor no texto*/
+    text-align: justify;/*alinhar e justificar o texto*/
+    text-decoration: none;/*tirar a decoração*/
+    text-decoration: underline, overline;/*embaixo e ensima
 }
 
 
