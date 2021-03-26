@@ -64,6 +64,15 @@ p{
     text-decoration: underline, overline;/*embaixo e ensima*/
     text-transform: lowercase,uppercase,capitalize;/*letras maiusculas e minusculas, primeiras letras maiusculas*/
     text-indent: 109px;/*identar o texto*/
+    letter-spacing: normal;/*espaçamento entre as letras*/
+    line-height: 1; /*altura da linhas podemos usar 1,2,3,4*/
+    direction: ltr,rtl;/*direção do paragrafo*/
+    word-spacing:50px; /* expaçamento entre as palavras*/
+    white-space: normal,nowrap;/*nowrap não obedece o conteiner não quebra a linha*/
+    overflow: hidden;/*ocunta o texto que sai do conteiner*/
+    overflow: scroll,auto;/*controla o texto transbordado com uma barra de rolagem*/
+    word-break: break-all;/*quebra a palavra no limite do conteiner*/
+    text-align-last: right;/*alinhar a ultima linha do paragrafo*/
 }
 
 
