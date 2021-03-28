@@ -1,0 +1,11 @@
+body{
+    background-color: red;
+}
+@media print{
+
+}
+@media screen and (max-width:800px){
+    body{
+        background-color: red;
+    }
+}

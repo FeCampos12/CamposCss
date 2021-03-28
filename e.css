@@ -77,4 +77,302 @@ p{
 
 
 
+/*FORMATAÇÃO DE FONTE FORMATAÇÃO DE FONTE FORMATAÇÃO DE FONTE FORMATAÇÃO DE FONTE FORMATAÇÃO DE FONTE FORMATAÇÃO DE FONTE*/
+
+@font-face{
+    font-family: fonteCampos;
+    src:url(MAGNETO.TTF);
+
+}
+
+p{
+    font-family: fonteCampos,Arial, Helvetica, sans-serif;/*tipo de escrita*/
+    font-style: italic,oblique,normal;/*mudar o estilo da escrita*/
+    font-size:20px;/*tamanho da fonte*/
+    font-weight: bold;/*neglitar o texto*/
+    font-variant: small-caps;/*coloca o texto tudo maiuscula, mas as primeiras letras que ja estavam maiusculas ficam maiores*/
+    
+}
+
+
+
+/*FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK FORMATAÇÃO DE LINK*/
+/*usa isso quando criares o curso de xadrez para os modulos de aula*/
+/*um enter entre um link e outro "a" resulta num espaço na visualisação da pagina num navegador*/
+/*podemos usar o menu em apenas uma pagina e chamar esse conteudo em todas as paginas a partir da tag object*/
+/*target="_new" chama o linc em outra pagina que sera usafa por todos
+target="_parent" apropiado para menos em arquivos externos*/
+a:visited{
+
+}/*link que ja foi visitado*/
+a:link{
+text-decoration: none;/*tirar a decoração do link*/
+color:black;
+display:block;
+font-size: 20px;
+display: table-cell;/*funciona como celula de tabela*/
+text-align: center;
+vertical-align: middle;/*garante que o conteudo estara no centro*/
+}/*link que ainda não foi vivitado*/
+a:active{
+
+}/*link que esta sendo visitado*/
+a:hover{
+
+}/*Ao passar por um link*/
+
+
+
+
+/*TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D TRANFORMAÇÃO 2D*/
+/*podemos usar isso para o jogo de nant para mover as peças*/
+div{
+    transform: translate(200px,200px);/*serve para movimentar um elemento*/
+    transform: rotate(45deg);/*rodar o elemento em graus*/
+    transform: scale(2) translate(200px,200px);/*aumentar ou diminuir o elemento (2) dobrar o elemento. podemos usar mais de uma propiedade*/
+    transform: skewX(20deg);/*inclinar o elemento a partir do eixo x*/
+    /*transform: matrix(scaleX,skewY,skewY,scaleY,straformX,TranformY;*/
+    transform: matrix(0,0,0,0,0,0);
+    transform-origin: 0% 0%;/*tranportar o origem nesse caso a origemesta no canto superior esquerdo, para estar no direito pasta colocar 100% no 1º*/
+}
+
+
+
+/*TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D*/
+.div1{
+    transform: rotate3d(0deg,0deg,0deg);
+    backface-visibility: hidden;/*parte de tras fica invisivel*/
+    perspective: 15px;/*usa-se no elemento que contem o elemento que queres transladar*/
+}
+
+
+
+/*TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D TRANFORMAÇÕES 3D*/
+ul{
+    list-style-type: square,circle;/*mudar o tipo de marcação da lista*/
+    list-style-image: url(ma.jpg);/*colocar o marcador com imagem*/
+    list-style-position: inside;/*O marcador fica dentro da area list item*/
+    list-style: decimal-leading-zero outside url(ma.jpg);
+
+}
+
+
+
+
+/*FORMATAÇÃO DE TABELA FORMATAÇÃO DE TABELA FORMATAÇÃO DE TABELA FORMATAÇÃO DE TABELA FORMATAÇÃO DE TABELA FORMATAÇÃO DE TABELA*/
+table{
+    table-layout: fixed;/*as colunas ficam com o mesmo tamanho*/
+    border-collapse: collapse;/*configurar os espaçamentos entre linhas e colunas nesse caso elimina*/
+    border-spacing: 100px, 100px;/*antes tem que tirar o colapse e colocar separetor*/
+    empty-cells: hide;/*apaga selulas sem contudo*/
+}
+
+td{
+    vertical-align: top;/*colocar o txto no top*/
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: brown;/*adicionar a formatação zebra*/
+}
+
+
+
+/*PROPIEDADE OUTLINE PROPIEDADE OUTLINE PROPIEDADE OUTLINE PROPIEDADE OUTLINE PROPIEDADE OUTLINE PROPIEDADE OUTLINE*/
+.div3{
+    display: inline-block;/*mudar as propiedades da tag*/
+    outline-color: darkblue;/*elemento separador que quase passa despercebido*/
+    outline-offset:15px;/*distância entre o elemento e o autline*/
+    outline-style: solid;
+    outline-width: 100px;
+    
+}
+
+
+
+/*ELEMENTO DISPLAY ELEMENTO DISPLAY ELEMENTO DISPLAY ELEMENTO DISPLAY ELEMENTO DISPLAY ELEMENTO DISPLAY ELEMENTO DISPLAY*/
+#di{
+    display:none;/*o elemento ira desaparecer não sera escrito na pagina*/
+    visibility: hidden;/*tranforma em invisivel*/ 
+    display: table-cell;/*transforma uma div em celula de uma tabela*/
+    vertical-align: middle;/*essa função so funciona com tabela eu quando tranformamos em tabela com table cell*/
+    /*posicionamento vertical: Podemos usar para por um nome no meio de uma div*/
+    line-height: 0%;/*tambem centralisa na vertical, com este elemento não e necessario transformar em tabela*/
+}
+ol{
+    display: table;/*tranformar em tabela*/
+}
+ul{
+    display: table-row;/*tranformar em linha da tabela*/
+}
+li{
+    display: table-cell;/*transformar em celula da tabela*/
+}
+/*Flex Flex Flex Flex Flex Flex uma seção com varias divs dentro Flex Flex Flex Flex Flex Flex Flex Flex Flex Flex Flex*/
+section{
+    display: flex;/*usando esta função as divs dentro desta seção ficarao do tipo inline um ao lado do outro*/
+    min-width: 500px;/*define um tamanha ate onte pode diminuir a medida que forem ajustando a tela*/
+    flex-wrap: nowrap;/*os seus filhos ao serem ajustados não daram quebra de linha*/
+    justify-content: flex-start,flex-end;/*alinhamento horisonral, mudar o estilo de alinhamento, */
+    align-items: flex-start,flex-end,center;/*alinhamento vertical podemos centralizar a vertical*/
+    flex-direction: row,column,row-reverse,column-reverse;/*linha , coluna linha invertida coluna invertida*/
+}
+div{
+    flex: 1;/*as divs ficam flexiveis de acordo a area do conteiner section, acupando todo espaço en tamanhos igrais*/
+    flex-grow:1;/*configuração padrao igual flex:1*/
+    flex-shrink: ;/*indica se o elemento vai ter a capacidade de contrair esticar*/
+    flex-basis: ;/*indica a area que o elemento vai ocupar no conteiner*/
+}
+d1{
+    order:2;/*definer a ordem dos elementos flexiveis no conteiner*/
+    flex-grow:1;/* se estiver espaço vasio ele vai ocupar o espaço vasio*/
+     flex-shrink:1 ;
+     flex-basis:100%;/*vai ocupar 100% do conteiner*/
+}
+
+
+
+
+/*PROPRIEDADES POSITION Z INDEX PROPRIEDADES POSITION Z INDEX PROPRIEDADES POSITION Z INDEX PROPRIEDADES POSITION Z INDEX*/
+.div4{
+    position: static;/*posição padrão*/
+}
+.d5{
+    position: absolute;/*posição absoluta em relação ao conteiner*/
+    top:10px;/*movimentar o elemento para cima*/
+    left: 10px;
+    position:relative;/*com esta codigo este elemento sera posicionado com relaçao ao seu elemento anterior desde que esse esteja em posicionamento estatic*/
+    position: fixed;/*fica posicionado definitivamente com relação a janela*/
+    z-index: 1;/*indicar que vai ficar afrende do outro*/
+
+}
+
+
+
+/*PROPRIEDADES FLOAT E CLEAR PROPRIEDADES FLOAT E CLEAR PROPRIEDADES FLOAT E CLEAR PROPRIEDADES FLOAT E CLEAR PROPRIEDADES FLOAT E CLEAR*/
+#img{
+    float:left;/*a imagem ira para a esquerda e o resto dos elementos seguenlhes a frente*/
+}
+.limpar{
+    clear:left;/*nao ira ser afetado a esquerda*/
+    clear:both;/*nenhum elemento fica em sima dele*/
+}
+
+
+
+
+/*PROPIEDADE OVERFLOW PROPIEDADE OVERFLOW PROPIEDADE OVERFLOW PROPIEDADE OVERFLOW PROPIEDADE OVERFLOW PROPIEDADE OVERFLOW*/
+#di{
+    overflow: visible,hidden,scroll,auto;/*visivel,ocultado,barra de separação,barra de separação quando for necessario, o auto e a melhor opção*/
+}
+
+
+
+
+/*PSEUDO ELEMENTOS (AFTER BEFORE) PSEUDO ELEMENTOS (AFTER BEFORE) PSEUDO ELEMENTOS (AFTER BEFORE) PSEUDO ELEMENTOS (AFTER BEFORE)*/
+p::before{
+    content:"oi amigo";/*escrever ooi amigo antes de todos p*/
+}
+
+p::after{
+    content:"oi amigo";/*escrever ooi amigo depois de todos p*/
+}
+p::first-letter{
+    color:brown;/*formatação da primeira letra do paragrafo*/
+}
+p::first-line{
+    color: chartreuse;/*formatação da primeira linha do paragrafo*/
+}
+::selection{
+    color:cyan;/*formata texto selecionado*/
+}
+
+
+
+
+/*TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION*/
+p{
+    transition: width 2s,backgroundcolor 2s;/*usa-se se tiver um hover para esse elemento e controlar o processo de modificação*/
+    transition-timing-function: ease;/*padrão*/
+    transition-timing-function:linear;/*mantem a modificação na mesma velocidade*/
+    transition-timing-function:ease-in,ease-out;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);/*configurar o percurso da transição*/
+    transition-delay: 2s;/*da um dilei atraso de 2s*/
+    
+
+}
+
+
+
+/*ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION ANIMATION*/
+@keyframes anima1{/*ciar as fases de animação*/
+    from{left:0px;top:20px}/*de,posição inicial*/
+    to{left:600px}/*posição final*/
+}
+
+@keyframes anima1{
+    10%{left:0px;top:20px}/*outra forma de definir as fases da animação*/
+    20%{left:600px}
+    50%{left:0px;top:20px}
+    100%{left:600px}
+}
+
+p{
+    position: relative;
+    animation-name: anima1,anima2;
+    animation-duration: 3s,4s;/*primeiro dura 3 e o segundo 4*/
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 4,infinite;/*executar 4vezes,executar infinitasvezes*/
+    animation-play-state: paused,running;/*pausar a animação e rodar a animação*/
+    animation-direction: reverse,alternate,alternate-reverse;/*animação invertida, animação alterbada e ambas*/
+}
+
+
+
+
+/*COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS COLUNAS*/
+p{
+    columns: 2;/*dividir o paragrafo em 2 colunas*/
+    column-gap: 30px;/*distancia entre as colunas*/
+    column-rule: 1px outset black;/*outser inset solid*/
+}
+
+
+
+
+/*RESIZE RESIZE RESIZE RESIZE RESIZE  DEFINIR TAMANHO DE UMA DIV RESIZE RESIZE RESIZE RESIZE RESIZE RESIZE RESIZR RESIZE*/
+div{
+    overflow: auto;
+    resize: horizontal;/*dar a possibilidade de redirecionar a div, deve ser usado em conjunto com o overflow*/
+    resize: both;/*redirecionar na horizontal e vertical*/
+}
+
+
+
+
+/* BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING BOX-SIZING*/
+div{
+    box-sizing: content-box;/*padrao*/
+    box-sizing: border-box;/*a div sera apresentado no tamanho normal independentemente do padding e da borda*/
+
+}
+
+
+
+
+/*FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER*/
+img{
+    filter: grayscale();/*filtrar a cpropriedades da imagem,0% a 100% e 0 a 1*/
+    filter: blur(1px);/*embassar a imagem*/
+    filter: brightness(100%);/*brilho podemos colocar numeros maior que 100%*/
+    filter: contrast(200%);/**filtrar os traços*/
+    filter: drop-shadow(10px,10px,30px,black);/*colocar uma sombra de 30px de cor preta deslocado 10 no x e 10 no y*/
+    filter: hue-rotate(0deg);/*ntrole da Matis*/
+    filter: invert(1);/*inverter as cores*/
+    filter: opacity(100%);/*controlar a opacidade*/
+    filter: saturate(200%);/*controlar tonalidade das cores*/
+    filter: sepia(100%);/*aplicar o efeito de envelhecimento*/
+    filter: sepia(100%) brightness(100%) blur(1px);/*controlar varios filtros so se pode usar varios filtros desta maneira*/
+}
+
 
