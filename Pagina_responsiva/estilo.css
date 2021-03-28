@@ -1,11 +1,19 @@
-body{
-    background-color: red;
-}
+
 @media print{
 
 }
-@media screen and (max-width:800px){
+@media screen and (min-width:0px) and (max-width:400px) and (orientation:portrait)/*altura maior que a largura*/{
     body{
         background-color: red;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px) and (orientation:landscape)/*largura maior que a altura*/{
+    body{
+        background-color: rgb(57, 142, 182);
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px){
+    body{
+        background-color: rgb(190, 49, 136);
     }
 }
